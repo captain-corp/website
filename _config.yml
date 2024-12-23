@@ -26,7 +26,16 @@ search_enabled: true
 # Aux links for the upper right navigation
 aux_links:
   "GitHub":
-    - "https://github.com/shinuza/captain-website"
+    - "https://github.com/captain-corp/captain"
 
 # Makes Aux links open in a new tab
 aux_links_new_tab: true
+
+# Callouts
+callouts:
+  note:
+    title: Note
+    color: blue
+  warning:
+    title: Warning
+    color: red
