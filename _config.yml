@@ -1,0 +1,32 @@
+title: Captain Documentation
+description: Captain documentation website
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Theme settings
+theme: just-the-docs
+color_scheme: light
+
+# Enable or disable heading anchors
+heading_anchors: true
+
+# Sort order for navigation links
+nav_sort: case_insensitive # alternatively 'case_sensitive'
+
+# Footer content
+footer_content: "Copyright &copy; 2024 Captain"
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# Enable or disable the site search
+search_enabled: true
+
+# Aux links for the upper right navigation
+aux_links:
+  "GitHub":
+    - "https://github.com/shinuza/captain-website"
+
+# Makes Aux links open in a new tab
+aux_links_new_tab: true
