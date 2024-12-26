@@ -1,125 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Captain - Simple and Powerful Content Management</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Captain - Simple and Powerful Content Management</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        />
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sans: ["Inter", "sans-serif"],
+                        },
                     },
-                }
-            }
-        }
-    </script>
-</head>
-<body class="bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <!-- Hero Section -->
-        <div class="text-center mb-16">
-            <h1 class="text-4xl font-bold text-gray-900 sm:text-5xl md:text-6xl mb-6">
-                Captain
-            </h1>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                A modern, lightweight content management system focused on simplicity and performance
-            </p>
-            <div class="mt-8">
-                <a href="#" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
-                    Get Started
-                </a>
-                <a href="https://github.com/captain-corp/captain" class="ml-4 inline-flex items-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
-                    View on GitHub
-                </a>
+                },
+            };
+        </script>
+    </head>
+    <body class="bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <!-- Hero Section -->
+            <div class="text-center mb-16">
+                <h1 class="text-4xl font-bold text-gray-900 sm:text-5xl md:text-6xl mb-6">
+                    <img
+                        src="logo.svg"
+                        alt="Captain Logo"
+                        class="h-16 mx-auto w-auto mb-6"
+                    />
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    A modern, lightweight content management system focused on
+                    simplicity and performance
+                </p>
+                <div class="mt-8">
+                    <a
+                        href="#"
+                        class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
+                    >
+                        Get Started
+                    </a>
+                    <a
+                        href="https://github.com/captain-corp/captain"
+                        class="ml-4 inline-flex items-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
+                    >
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div
+                    class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
+                >
+                    <!-- Performance Metrics -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
+                    >
+                        <div class="flex items-center mb-4">
+                            <div
+                                class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mr-4"
+                            >
+                                <svg
+                                    class="w-6 h-6 text-emerald-600"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                                    >
+                                    </path>
+                                </svg>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-900">
+                                Lightweight
+                            </h3>
+                        </div>
+                        <p class="text-gray-600">
+                            Single ~40MB self-contained binary with tiny ~15MB
+                            memory footprint. No external dependencies required.
+                        </p>
+                    </div>
+
+                    <!-- Feature 1 -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
+                    >
+                        <div
+                            class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4"
+                        >
+                            <svg
+                                class="w-6 h-6 text-purple-600"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                                />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                            Single Binary Distribution
+                        </h3>
+                        <p class="text-gray-600">
+                            No installation required. Download and run a single
+                            binary to get started immediately.
+                        </p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
+                    >
+                        <div
+                            class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4"
+                        >
+                            <svg
+                                class="w-6 h-6 text-blue-600"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"
+                                />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                            SQLite Database
+                        </h3>
+                        <p class="text-gray-600">
+                            Simple deployment with built-in SQLite database. No
+                            external database setup required.
+                        </p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
+                    >
+                        <div
+                            class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-4"
+                        >
+                            <svg
+                                class="w-6 h-6 text-amber-600"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                                />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                            Markdown & HTML Support
+                        </h3>
+                        <p class="text-gray-600">
+                            Write content in Markdown or HTML. Full support for
+                            both formats with live preview.
+                        </p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
+                    >
+                        <div
+                            class="w-12 h-12 bg-rose-100 rounded-lg flex items-center justify-center mb-4"
+                        >
+                            <svg
+                                class="w-6 h-6 text-rose-600"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
+                                />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                            Customizable Themes
+                        </h3>
+                        <p class="text-gray-600">
+                            Customize the look and feel with themes. Create your
+                            own or use community themes.
+                        </p>
+                    </div>
+
+                    <!-- Feature 5 -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
+                    >
+                        <div
+                            class="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center mb-4"
+                        >
+                            <svg
+                                class="w-6 h-6 text-cyan-600"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
+                                />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                            S3 Storage Support
+                        </h3>
+                        <p class="text-gray-600">
+                            Store your media files in any S3-compatible storage
+                            service for scalability.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="text-center bg-indigo-50 rounded-xl p-8 mt-16">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">
+                    Ready to Get Started?
+                </h2>
+                <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
+                    Download Captain now and start managing your content with ease. No complex setup required.
+                </p>
+                <div class="space-x-4">
+                    <a
+                        href="download.html"
+                        class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
+                    >
+                        Download Now
+                    </a>
+                    <a
+                        href="#"
+                        class="inline-flex items-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
+                    >
+                        Read Documentation
+                    </a>
+                </div>
             </div>
         </div>
 
-        <!-- Features Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            <!-- Feature 1 -->
-            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
-                    <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                    </svg>
-                </div>
-                <h3 class="text-lg font-semibold text-gray-900 mb-2">Single Binary Distribution</h3>
-                <p class="text-gray-600">No installation required. Download and run a single binary to get started immediately.</p>
+        <!-- Footer -->
+        <footer class="bg-gray-50 mt-16">
+            <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+                <p class="text-center text-gray-500">
+                    &copy; <span id="currentYear"></span> Captain. All rights
+                    reserved.
+                </p>
             </div>
-
-            <!-- Feature 2 -->
-            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
-                    <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
-                    </svg>
-                </div>
-                <h3 class="text-lg font-semibold text-gray-900 mb-2">SQLite Database</h3>
-                <p class="text-gray-600">Simple deployment with built-in SQLite database. No external database setup required.</p>
-            </div>
-
-            <!-- Feature 3 -->
-            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
-                    <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-                    </svg>
-                </div>
-                <h3 class="text-lg font-semibold text-gray-900 mb-2">Markdown & HTML Support</h3>
-                <p class="text-gray-600">Write content in Markdown or HTML. Full support for both formats with live preview.</p>
-            </div>
-
-            <!-- Feature 4 -->
-            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
-                    <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
-                    </svg>
-                </div>
-                <h3 class="text-lg font-semibold text-gray-900 mb-2">Customizable Themes</h3>
-                <p class="text-gray-600">Customize the look and feel with themes. Create your own or use community themes.</p>
-            </div>
-
-            <!-- Feature 5 -->
-            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
-                    <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
-                    </svg>
-                </div>
-                <h3 class="text-lg font-semibold text-gray-900 mb-2">S3 Storage Support</h3>
-                <p class="text-gray-600">Store your media files in any S3-compatible storage service for scalability.</p>
-            </div>
-        </div>
-
-        <!-- Call to Action -->
-        <div class="text-center bg-indigo-50 rounded-xl p-8">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">Ready to Get Started?</h2>
-            <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
-                Download Captain now and start managing your content with ease. No complex setup required.
-            </p>
-            <div class="space-x-4">
-                <a href="#" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
-                    Download Now
-                </a>
-                <a href="#" class="inline-flex items-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
-                    Read Documentation
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="bg-white border-t border-gray-200 mt-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <div class="text-center text-gray-500">
-                <p>&copy; 2024 Captain. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
